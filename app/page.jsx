@@ -10,6 +10,7 @@ import AboutUs from "./components/sections/AboutUs";
 import Events from "./components/sections/Events";
 import FAQ from "./components/sections/FAQ";
 import Footer from "./components/sections/Footer";
+import Branches from "./components/sections/Branches";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Trusties />
       <Testimonials />
       <AboutUs />
+      <Branches/>
       <Events />
       <FAQ />
       <Footer />
