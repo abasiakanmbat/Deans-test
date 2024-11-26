@@ -81,6 +81,7 @@ function Pricing() {
     <li>Delivered in collaboration with the University of Waterloo Blockchain Club to bring diverse perspectives and innovative ideas.</li>
     <li>All findings and recommendations compiled into a detailed, professional-grade report.</li>
   </ul>
+  <hr className="border-t border-gray-500 my-4" />
 
   <div className="flex justify-between items-center mt-4">
     <p className="text-3xl font-bold">$4,999 <span className="text-sm">per session</span></p>
