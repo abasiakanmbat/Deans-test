@@ -25,12 +25,12 @@ function Branches() {
 					</div>
 					
 				</div>
-				<div className="flex flex-col w-[685px] h-36 border-2 border-green-500 rounded-lg pl-3 pt-1 pr-3 bg-gradient-to-r from-[#B1B60D] to-[#238F4B] p-6 rounded-lg relative" >
+				<div className="flex flex-col w-[685px] h-36 border-2 border-[#D6BE16] rounded-lg pl-3 pt-1 pr-3 bg-gradient-to-r from-[#B1B60D] to-[#238F4B] p-6 rounded-lg relative" >
 				<img src="dlbrimage.png" alt="Image Description" class="absolute right-0 top-0 h-full w-1/2 object-cover mix-blend-multiply"/>
 				<div className="relative z-10 mt-5">
 				<div className="flex items-center">
 						<h2>Deanslist BR </h2>
-						<img src="flag-brazil.png" alt="Nigeria Flag" class="absolute top-0 left-0 w-6 h-6 ml-24 " />
+						<img src="flag-brazil.png" alt="Brazil Flag" class="absolute top-0 left-0 w-6 h-6 ml-24 " />
 						</div>
 					<div className="flex flex-row pt-5 gap-16 ">
 					<h3>Visit our regional office to get in touch with DeanslistBR community members and learn more about us.</h3>
