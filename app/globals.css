@@ -22,19 +22,19 @@
 /*Pricing*/
 @keyframes rotate-border {
   0% {
-    border-image-source: linear-gradient(90deg, red, #070707, #0f0f0f, #1d1e1f);
+    border-image-source: linear-gradient(90deg, purple, #070707, #0f0f0f, #1d1e1f);
   }
   25% {
-    border-image-source: linear-gradient(90deg, #0b0b0b, #070707, #0f0f0f, red);
+    border-image-source: linear-gradient(90deg, #0b0b0b, #070707, #0f0f0f, purple);
   }
   50% {
-    border-image-source: linear-gradient(90deg, #0b0b0b, #070707, red, #1d1e1f);
+    border-image-source: linear-gradient(90deg, #0b0b0b, #070707, purple, #1d1e1f);
   }
   75% {
-    border-image-source: linear-gradient(90deg, #0b0b0b, red, #0f0f0f, #1d1e1f);
+    border-image-source: linear-gradient(90deg, #0b0b0b, purple, #0f0f0f, #1d1e1f);
   }
   100% {
-    border-image-source: linear-gradient(90deg, red, #0b0b0b, #060606, #070707);
+    border-image-source: linear-gradient(90deg, purple, #0b0b0b, #060606, #070707);
   }
 }
 

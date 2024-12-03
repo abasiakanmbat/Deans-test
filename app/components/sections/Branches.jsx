@@ -2,14 +2,19 @@
 
 function Branches() {
 	return (
-		<div className="w-screen  bg-[#1a0d2d] flex flex-row text-white  p-14 pt-40">
+		<div className="w-screen  bg-gradient-to-r from-purple-900 to-black flex flex-row text-white  p-14 pt-40">
+			{/*Left Content*/}
+
 			<div className=" w-[500px] flex flex-col" >
 				<h6 className="text-white text-sm font-semibold mb-4">Branches</h6>
 				<h4 className="text-white text-2xl font-bold mb-4">Our Regional <em>States</em></h4>
 				<h5>Countries in which you can find us IRL and visit our branches.</h5>
 			</div>
+
+			{/*Branch card*/}
 			<div className="flex flex-col gap-4 " >  
-				<div className="flex flex-col w-[685px] h-36 border-2 border-green-500 rounded-lg pl-3 pt-1 pr-3 bg-gradient-to-r from-green-500 to-white p-6 rounded-lg relative " >
+				{/*Card1*/}
+				<div className="flex flex-col w-[685px] h-36 border-2 border-green-500 rounded-lg pl-3 pt-1 pr-3 bg-gradient-to-r from-green-500 to-white p-6 rounded-lg relative "  >
 					<img src="dlngimage.png" alt="Image Description" className="absolute right-0 top-0 h-full w-1/2 object-cover mix-blend-multiply"/>
 					<div className="relative z-10 mt-5">
 						<div className="flex items-center">
@@ -25,6 +30,7 @@ function Branches() {
 					</div>
 					
 				</div>
+				{/*Card2*/}
 				<div className="flex flex-col w-[685px] h-36 border-2 border-[#D6BE16] rounded-lg pl-3 pt-1 pr-3 bg-gradient-to-r from-[#B1B60D] to-[#238F4B] p-6 rounded-lg relative" >
 					<img src="dlbrimage.png" alt="Image Description" className="absolute right-0 top-0 h-full w-1/2 object-cover mix-blend-multiply" />
 				<div className="relative z-10 mt-5">

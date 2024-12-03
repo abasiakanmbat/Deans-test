@@ -9,7 +9,7 @@ const testimonials = [
 	{
 		quote:
 			"The improved user experience and accessible technical information have made a noticeable difference. The site redesign made exploring DeansListDAO's resources enjoyable and straightforward.",
-		logo: "/images/logo/lulo.png", // Use actual paths from your public folder
+		logo: "/images/logo/lulo.png", 
 		company: "Lulo",
 		description: "The modern way to grow your wealth.",
 	},

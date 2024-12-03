@@ -5,14 +5,14 @@ function Pricing() {
 
 
 	return (
-		<div className="w-screen bg-[#1a0d2d] flex flex-col justify-center items-center text-white">
+		<div className="w-screen bg-gradient-to-r from-purple-900 to-black flex flex-col justify-center items-center text-white">
 			<div className="flex flex-col items-center p-10">
 			<h6 className="text-white text-sm font-semibold mb-4">pricing</h6>
 			  <h4 className="text-white text-2xl font-bold mb-4">Plans that fit your <em>scale</em></h4>
 			  <h5>No additional fees or hidden costs.</h5>
 			</div>
     
-      <div className="flex flex-col items-center bg-[#090118] p-8">
+      <div className="flex flex-col items-center bg-gradient-to-r from-purple-900 to-black p-8">
   <div className="flex flex-col lg:flex-row justify-center items-stretch gap-8 max-w-6xl">
     {/* Feedback Bonanza */}
     <div className="w-full lg:w-1/3 bg-[#1a0d2d] text-white p-6 shadow-lg flex flex-col h-full card-animated-border">
@@ -52,14 +52,14 @@ function Pricing() {
         <p className="text-3xl font-bold">
           $999 <span className="text-sm">per session</span>
         </p>
-        <button className="bg-[#007BFF] hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4">
+        <button className="bg-[#70328F] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-4">
           Get Started
         </button>
       </div>
     </div>
 
     {/* Feedback Bonanza PLUS */}
-    <div className="w-full lg:w-1/3 bg-[#1a0d2d] text-white p-6 shadow-lg flex flex-col h-full card-animated-border relative">
+    <div className="w-full lg:w-1/3 bg-purple-900 text-white p-6 shadow-lg flex flex-col h-full card-animated-border relative">
       <div className="absolute top-4 right-4 bg-purple-700 text-xs font-bold px-2 py-1 rounded-full">
         Most Popular
       </div>
@@ -90,7 +90,7 @@ function Pricing() {
         <p className="text-3xl font-bold">
           $1499 <span className="text-sm">per session</span>
         </p>
-        <button className="bg-[#007BFF] hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4">
+        <button className="bg-black hover:bg-gray-600 text-white font-bold py-2 px-4 rounded mt-4">
           Get Started
         </button>
       </div>
@@ -142,7 +142,7 @@ function Pricing() {
         <p className="text-3xl font-bold">
           $4,999 <span className="text-sm">per session</span>
         </p>
-        <button className="bg-[#007BFF] hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4">
+        <button className="bg-[#70328F] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-4">
           Get Started
         </button>
       </div>

@@ -45,7 +45,7 @@ const Services = () => {
 						Our goal is to make your product user-friendly with top-notch functionality that meets industry standards.
 					</p>
 					<Image
-						src="/images/feedback-review-illustration.png" // Replace with the actual image path
+						src="/images/feedback-review-illustration.png" 
 						alt="Feedback Review"
 						width={400}
 						height={200}
