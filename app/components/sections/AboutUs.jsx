@@ -1,6 +1,6 @@
 function AboutUs() {
 	return (
-		<div className="w-screen bg-[#090118] flex flex-col justify-center items-center text-white">
+		<div className="w-screen bg-[#1a0d2d] flex flex-col justify-center items-center text-white">
 			<div className="flex flex-col items-center p-5">
               <h6 className="text-white text-sm font-semibold mb-4">About us</h6>
 			  <h4 className="text-white text-2xl font-bold mb-4">Redefining Excellence</h4>
@@ -8,7 +8,7 @@ function AboutUs() {
 			</div>
 			<div className="flex flex-row  items-center ">
              <div className="w-[500px]">
-               <h4 className="text-white text-2xl font-bold mb-4">Designed with a distinct <br /> and outstanding approach <br /> <br /> </h4>
+               <h4 className="text-white text-2xl font-bold mb-4">Designed with a <em>distinct</em> <br /> and <em>outstanding </em>approach <br /> <br /> </h4>
 			 </div>
 			 <div className="p-5">
 			 <div>
@@ -26,9 +26,9 @@ function AboutUs() {
 				<h3>Dean's List DAO doing numbers!</h3>
 				<div className="pt-5">
                   <ul className="flex flex-row items-center gap-72">
-					<li><h5>200+</h5> Project received</li>
-					<li><h5>$500k+</h5> Community GDP</li>
-					<li><h5>100+</h5> Citizens</li>
+					<li><em><h5>200+</h5></em> Project received</li>
+					<li><em><h5>$500k+</h5></em> Community GDP</li>
+					<li><em><h5>100+</h5></em> Citizens</li>
 				  </ul>
 				</div>
 

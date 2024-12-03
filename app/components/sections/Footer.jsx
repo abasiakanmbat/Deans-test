@@ -10,7 +10,7 @@ function Footer() {
   };
 
 	return (
-		<footer className="bg-[#090118] text-white p-16">
+		<footer className="bg-[#1a0d2d] text-white p-16">
   <div className="flex justify-between items-center pb-6">
     <div className="flex items-center">
       <img src="dean.png" alt="DeansListDAO Logo" className="w-10 h-10 mr-2" />

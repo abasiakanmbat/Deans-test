@@ -3,26 +3,71 @@
 
 
 function Partners() {
+	const partners = [
+	  { img: "realms.png", name: "Realms", link: "https://www.realms.today" },
+	  { img: "island.png", name: "IslandDAO", link: "https://island-dao.com"  },
+	  { img: "pubkey.png", name: "Pubkey", link: "https://app.pubkey.link/"  },
+	  { img: "solana.png", name: "Solana Foundation", link: "https://solana.com"  },
+	  { img: "coloseum.png", name: "Colosseum", link: "https://www.colosseum.org/"  },
+	  { img: "gib.png", name: "Gib.work", link: "https://gib.work"  },
+	  { img: "anthensdao.png", name: "AthensDAOx", link: "https://x.com/athensdao"  },
+	  { img: "waterloo.png", name: "University of Waterloo", link: "https://uwaterloo.ca/"  },
+	  { img: "sec.png", name: "Sec3", link: "https://pro.sec3.dev/"  },
+	  { img: "metaplex.png", name: "Metaplex", link: "https://www.metaplex.com/"  },
+	  { img: "realms.png", name: "Realms", link: "https://www.realms.today"  }
+	  
+	];
+  
 	return (
-		<div className="w-screen bg-[#090118] h-96 flex justify-center items-center text-white" >
-			<div className=" w-[1000px] flex flex-col items-center">
-				<h6 className="text-white text-sm font-semibold mb-4">Partners</h6>
-				<h4 className="text-white text-2xl font-bold mb-4">Our partners are our strength</h4>
-				<div className="  p-10">
-				<ul className='flex flex-row items-center gap-8'>
-              <li className='flex items-center justify-between gap-4 px-2 py-2'><img src='realms.png' alt="realms" className="w-10 h-10"/>Realms</li>
-              <li className='flex items-center justify-between gap-4 px-2 py-2'><img src='island.png' alt="islanddao" className="w-10 h-10"/>IslandDAO</li>
-              <li className='flex items-center justify-between gap-4 px-2 py-2'><img src='pubkey.png' alt="pubkey" className="w-10 h-10"/>Pubkey</li>
-              <li className='flex items-center justify-between gap-4 px-2 py-2'><img src='solana.png' alt="solana" className="w-10 h-10"/>Solana</li>
-              <li className='flex items-center justify-between gap-4 px-2 py-2'><img src='coloseum.png' alt="colosseum" className="w-10 h-10"/>Colosseum</li>
-              <li className='flex items-center justify-between gap-4 px-2 py-2'><img src='gib.png' alt="gibwork" className="w-10 h-10"/>Gib.work</li>
-             
-              
-            </ul>
-				</div>
+	  <div className="w-screen bg-[#1a0d2d] h-96 flex justify-center items-center text-white">
+		<div className="w-[1000px] flex flex-col items-center">
+		  <h6 className="text-white text-sm font-semibold mb-4">Partners</h6>
+		  <h4 className="text-white text-2xl font-bold mb-4">
+			Our <em>partners</em> are our strength
+		  </h4>
+		  <div className="overflow-hidden w-full">
+			
+			<div className="flex animate-scroll whitespace-nowrap">
+			  
+			  <ul className="flex items-center gap-8">
+				{partners.map((partner, index) => (
+				  <li
+					key={index}
+					className="flex items-center justify-between gap-4 px-4 py-2"
+				  >
+					<a href={partner.link} target="blank"  rel="noopener noreferrer"
+        className="flex items-center gap-4">
+					<img
+					  src={partner.img}
+					  alt={partner.name}
+					  className="w-8 h-8 rounded-full"
+					/>
+					<span className="text-sm font-medium">{partner.name}</span></a>
+				  </li>
+				))}
+			  </ul>
+			  
+			  <ul className="flex items-center gap-8 ml-6">
+				{partners.map((partner, index) => (
+				  <li
+					key={`duplicate-${index}`}
+					className="flex items-center justify-between gap-4 px-4 py-2"
+				  >
+					<img
+					  src={partner.img}
+					  alt={partner.name}
+					  className="w-12 h-12 rounded-full"
+					/>
+					<span className="text-sm font-medium">{partner.name}</span>
+				  </li>
+				))}
+			  </ul>
 			</div>
+		  </div>
 		</div>
+	  </div>
 	);
-}
-
-export default Partners;
+  }
+  
+  export default Partners;
+  

@@ -4,14 +4,66 @@
 
 
 
-.overflow-x-auto::-webkit-scrollbar {
-  display: none; 
+/*slider*/
+
+@keyframes scroll {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-60%);
+  }
 }
 
-.overflow-x-auto {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+.animate-scroll {
+  animation: scroll 10s linear infinite;
 }
+
+/*Pricing*/
+@keyframes rotate-border {
+  0% {
+    border-image-source: linear-gradient(90deg, red, #070707, #0f0f0f, #1d1e1f);
+  }
+  25% {
+    border-image-source: linear-gradient(90deg, #0b0b0b, #070707, #0f0f0f, red);
+  }
+  50% {
+    border-image-source: linear-gradient(90deg, #0b0b0b, #070707, red, #1d1e1f);
+  }
+  75% {
+    border-image-source: linear-gradient(90deg, #0b0b0b, red, #0f0f0f, #1d1e1f);
+  }
+  100% {
+    border-image-source: linear-gradient(90deg, red, #0b0b0b, #060606, #070707);
+  }
+}
+
+.card-animated-border {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background-clip: padding-box;
+}
+
+.card-animated-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #70328F1F, #70328F1F, #70328F1F, #70328F1F);
+  animation: rotate-border 4s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+
+
 
 
 /* :root {
