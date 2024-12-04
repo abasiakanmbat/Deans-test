@@ -1,23 +1,27 @@
+import { CircleArrowUp } from "lucide-react";
+import { ArrowDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+
 function Hero() {
 	return (
-		<div className="py-20 px-4 text-center">
+		<div className="pt-20 px-4 text-center flex flex-col items-center">
 			{/* Badge Section */}
-			<div className="flex justify-center items-center space-x-4 mb-6">
-				<span className="bg-purple-500 text-white text-sm py-1 px-3 rounded-full">
+			<div className="flex justify-center items-center space-x-4 mb-6 bg-purple-500 p-1 rounded-full cursor-pointer">
+				<span className="bg-white text-purple-500 text-sm py-1 px-3 rounded-full">
 					New feature
 				</span>
-				<a
-					href="/realms-dashboard"
-					className="text-purple-300 underline hover:text-white transition"
+				<p
+					className="flex gap-2 items-center"
 				>
-					Check out the Realms dashboard →
-				</a>
+					Check out the Realms dashboard <ArrowRight size={16} />
+				</p>
 			</div>
 
 			{/* Main Title */}
 			<h1 className="text-4xl md:text-5xl font-bold mb-4">
-				<span className="text-purple-400">Web3 Native</span> <em>Network State</em>, <br />
-				Solana&rsquo;s Most Dedicated Power Users.
+				<p >Web3 Native <span className="italic font-light">Network State</span>, </p>
+				<p>Solana&rsquo;s Most Dedicated Power Users.</p>
 			</h1>
 
 			{/* Subtitle */}
@@ -28,12 +32,19 @@ function Hero() {
 
 			{/* Buttons */}
 			<div className="flex justify-center space-x-4">
-				<button className="bg-purple-500 text-white py-2 px-6 rounded-lg font-medium hover:bg-purple-600 transition">
+				<button className="bg-purple-500 py-2 px-6 rounded-lg font-medium hover:bg-purple-600 transition flex gap-2 items-center">
+					<CircleArrowUp />
 					Get Started
 				</button>
-				<button className="border border-white text-white py-2 px-6 rounded-lg font-medium hover:bg-white hover:text-purple-900 transition">
-					Learn more ↓
+				<button className="text-white py-2 px-6 rounded-lg font-medium hover:bg-white hover:text-purple-900 transition flex gap-2 items-center">
+					Learn more <ArrowDown />
 				</button>
+			</div>
+
+			<div className="w-full flex justify-center mt-16 overflow-hidden h-[320px]">
+				<div className="w-[1024px] h-[1024px] rounded-full border-t-8 border-[#351A45]">
+					<img src="/continents.png" className="w-full" />
+				</div>
 			</div>
 		</div>
 	);

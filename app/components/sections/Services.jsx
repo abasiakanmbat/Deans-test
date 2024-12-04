@@ -22,7 +22,7 @@ const Services = () => {
 	};
 
 	return (
-		<div className="bg-gradient-to-r from-purple-900 to-black text-white py-16 px-12">
+		<div className="py-16 px-12">
 			{/* Header Section */}
 			<div className="text-center mb-12">
 				<h2 className="text-4xl font-bold">
@@ -39,154 +39,34 @@ const Services = () => {
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
 				{/* Feedback Review */}
-				<div className="bg-purple-800 rounded-lg shadow-md p-6 flex flex-col space-y-4">
-					<h3 className="text-2xl font-semibold">Feedback Review</h3>
-					<p className="text-gray-300">
-						Our goal is to make your product user-friendly with top-notch functionality that meets industry standards.
-					</p>
-					<Image
-						src="/images/feedback-review-illustration.png" 
-						alt="Feedback Review"
-						width={400}
-						height={200}
-						className="rounded-lg"
-					/>
-					{/* <motion.svg
-						width="600"
-						height="600"
-						viewBox="0 0 600 600"
-						initial="hidden"
-						animate="visible"
-					>
-						<motion.circle
-							cx="100"
-							cy="100"
-							r="80"
-							stroke="#ff0055"
-							variants={draw}
-							custom={1}
-						/>
+				<div className="rounded-lg shadow-md flex flex-col space-y-4 overflow-hidden border-2 border-purple-600">
+					<div className="px-6 pt-6">
+						<h3 className="text-2xl font-semibold">Feedback Review</h3>
+						<p className="text-gray-300">
+							Our goal is to make your product user-friendly with top-notch functionality that meets industry standards.
+						</p>
+					</div>
+					<div className="grid grid-cols-[30%,1fr] w-full h-[200px]">
+						<div>
+							<img src="/images/feedback1.svg" alt="feedback" />
+						</div>
+						<div>
+							<img src="/images/feedback2.svg" alt="feedback" />
+						</div>
+					</div>
 
-						<motion.line
-							x1="220"
-							y1="30"
-							x2="360"
-							y2="170"
-							stroke="#00cc88"
-							variants={draw}
-							custom={2}
-						/>
-						<motion.line
-							x1="220"
-							y1="170"
-							x2="360"
-							y2="30"
-							stroke="#00cc88"
-							variants={draw}
-							custom={2.5}
-						/>
-						<motion.rect
-							width="140"
-							height="140"
-							x="410"
-							y="30"
-							rx="20"
-							stroke="#0099ff"
-							variants={draw}
-							custom={3}
-						/>
-						<motion.circle
-							cx="100"
-							cy="300"
-							r="80"
-							stroke="#0099ff"
-							variants={draw}
-							custom={2}
-						/>
-						<motion.line
-							x1="220"
-							y1="230"
-							x2="360"
-							y2="370"
-							stroke="#ff0055"
-							custom={3}
-							variants={draw}
-						/>
-						<motion.line
-							x1="220"
-							y1="370"
-							x2="360"
-							y2="230"
-							stroke="#ff0055"
-							custom={3.5}
-							variants={draw}
-						/>
-						<motion.rect
-							width="140"
-							height="140"
-							x="410"
-							y="230"
-							rx="20"
-							stroke="#00cc88"
-							custom={4}
-							variants={draw}
-						/>
-						<motion.circle
-							cx="100"
-							cy="500"
-							r="80"
-							stroke="#00cc88"
-							variants={draw}
-							custom={3}
-						/>
-						<motion.line
-							x1="220"
-							y1="430"
-							x2="360"
-							y2="570"
-							stroke="#0099ff"
-							variants={draw}
-							custom={4}
-						/>
-						<motion.line
-							x1="220"
-							y1="570"
-							x2="360"
-							y2="430"
-							stroke="#0099ff"
-							variants={draw}
-							custom={4.5}
-						/>
-						<motion.rect
-							width="140"
-							height="140"
-							x="410"
-							y="430"
-							rx="20"
-							stroke="#ff0055"
-							variants={draw}
-							custom={5}
-						/>
-					</motion.svg> */}
 				</div>
 
 				{/* Decentragrants */}
-				<div className="bg-purple-800 rounded-lg shadow-md p-6 flex flex-col space-y-4">
-					<h3 className="text-2xl font-semibold">Decentragrants</h3>
-					<p className="text-gray-300">
-						Empowering projects with grants to support innovative, solution-driven development tailored for DAO.
-					</p>
+				<div className="rounded-lg shadow-md flex flex-col space-y-4 overflow-hidden border-2 border-purple-600">
+					<div className="px-6 pt-6">
+						<h3 className="text-2xl font-semibold">Decentragrants</h3>
+						<p className="text-gray-300">
+							Empowering projects with grants to support innovative, solution-driven development tailored for DAO.
+						</p>
+					</div>
 					<div className="flex flex-wrap space-x-2 space-y-2 mt-4">
-						{/* Grant Items */}
-						<div className="bg-purple-900 text-purple-300 px-4 py-2 rounded-md">
-							Publed $8,000
-						</div>
-						<div className="bg-purple-900 text-purple-300 px-4 py-2 rounded-md">
-							Gib.Work $7,500
-						</div>
-						<div className="bg-purple-900 text-purple-300 px-4 py-2 rounded-md">
-							SolonaHub $10,000
-						</div>
+						<img src="/images/feedback3.png" alt="feedback" />
 					</div>
 				</div>
 

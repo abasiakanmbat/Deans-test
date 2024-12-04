@@ -1,7 +1,36 @@
 
 
 function Pricing() {
+  const bonanzaItems = [
+    'Resolve critical issues in real-time for immediate impact.',
+    'Real-time testing and live insights from experts.',
+    'Optimize visuals and layout with expert feedback.',
+    'Analyze usability and design compared to competitors.',
+    'Feature requests to enhance engagement.',
+    'Actionable recommendations post-session.',
+    'Sentiment Analysis for panel users.',
+    'Mobile-only dApps reviewed with Solana SAGA DAO.',
+  ];
 
+  const bonanzaPlusItems = [
+    'Everything in Feedback Bonanza.',
+    'Enhanced analysis for usability and layout optimization.',
+    'Comprehensive summaries and recommendations.',
+    'Deeper insights for feature requests and engagement.',
+    'Mobile-only dApps reviewed with Solana SAGA DAO.',
+  ];
+
+  const deepDiveItems = [
+    'Includes Feedback Bonanza and PLUS features.',
+    'Comprehensive 2-week review by diverse experts.',
+    'Actionable insights for features and usability.',
+    'Competition analysis and Go-To-Market recommendations.',
+    'Governance structure insights for DAOs.',
+    'Tokenomics and distribution strategies advice.',
+    'Static code analysis with Sec3 for security.',
+    'Collaboration with Waterloo Blockchain Club.',
+    'Professional-grade final report.',
+  ];
 
 
 	return (
@@ -13,39 +42,21 @@ function Pricing() {
 			</div>
     
       <div className="flex flex-col items-center bg-gradient-to-r from-purple-900 to-black p-8">
-  <div className="flex flex-col lg:flex-row justify-center items-stretch gap-8 max-w-6xl">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl">
     {/* Feedback Bonanza */}
-    <div className="w-full lg:w-1/3 bg-[#1a0d2d] text-white p-6 shadow-lg flex flex-col h-full card-animated-border">
+          <div className="bg-[#1a0d2d] text-white p-6 shadow-lg flex flex-col h-full card-animated-border">
       <h2 className="text-xl font-bold mb-4">Feedback Bonanza</h2>
       <p className="text-sm mb-4">
         Live expert feedback on X, YouTube, and Twitch to optimize your dApp, improve usability, and outshine competitors!
       </p>
       <h3 className="text-lg font-semibold mb-4">Features</h3>
-      <ul className="space-y-2 text-sm">
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Resolve critical issues in real-time for immediate impact.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Real-time testing and live insights from experts.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Optimize visuals and layout with expert feedback.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Analyze usability and design compared to competitors.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Feature requests to enhance engagement.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Actionable recommendations post-session.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Sentiment Analysis for panel users.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Mobile-only dApps reviewed with Solana SAGA DAO.
-        </li>
+            <ul className="space-y-2 text-sm list-[url('/images/list-item-ind.svg')]">
+
+              {bonanzaItems.map((item, index) => (
+                <li className="flex items-start before:content-[''] before:inline-block before:w-4 before:h-4 before:bg-[url('/images/list-item-ind.svg')] before:bg-contain before:bg-no-repeat before:mr-2" key={index}>
+                  {item}
+                </li>
+              ))}
       </ul>
       <hr className="border-t-2 border-gray-600 my-6" />
       <div className="mt-auto">
@@ -59,7 +70,7 @@ function Pricing() {
     </div>
 
     {/* Feedback Bonanza PLUS */}
-    <div className="w-full lg:w-1/3 bg-purple-900 text-white p-6 shadow-lg flex flex-col h-full card-animated-border relative">
+          <div className="bg-purple-900 text-white p-6 shadow-lg flex flex-col h-full card-animated-border relative">
       <div className="absolute top-4 right-4 bg-purple-700 text-xs font-bold px-2 py-1 rounded-full">
         Most Popular
       </div>
@@ -69,21 +80,11 @@ function Pricing() {
       </p>
       <h3 className="text-lg font-semibold mb-4">Features</h3>
       <ul className="space-y-2 text-sm">
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Everything in Feedback Bonanza.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Enhanced analysis for usability and layout optimization.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Comprehensive summaries and recommendations.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Deeper insights for feature requests and engagement.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Mobile-only dApps reviewed with Solana SAGA DAO.
-        </li>
+              {bonanzaPlusItems.map((item, index) => (
+                <li className="flex items-start before:content-[''] before:inline-block before:w-4 before:h-4 before:bg-[url('/images/list-item-ind.svg')] before:bg-contain before:bg-no-repeat before:mr-2" key={index}>
+                  {item}
+                </li>
+              ))}
       </ul>
       <hr className="border-t-2 border-gray-600 my-6" />
       <div className="mt-auto">
@@ -97,7 +98,7 @@ function Pricing() {
     </div>
 
     {/* Deep Dive Assessment */}
-    <div className="w-full lg:w-1/3 bg-[#1a0d2d] text-white p-6 shadow-lg flex flex-col h-full card-animated-border">
+          <div className="bg-[#1a0d2d] text-white p-6 shadow-lg flex flex-col h-full card-animated-border">
       <h2 className="text-xl font-bold mb-4">
         Deep Dive Assessment{" "}
         <span className="bg-purple-700 text-xs font-bold px-2 py-1 rounded-full">
@@ -109,33 +110,11 @@ function Pricing() {
       </p>
       <h3 className="text-lg font-semibold mb-4">Features</h3>
       <ul className="space-y-2 text-sm">
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Includes Feedback Bonanza and PLUS features.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Comprehensive 2-week review by diverse experts.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Actionable insights for features and usability.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Competition analysis and Go-To-Market recommendations.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Governance structure insights for DAOs.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Tokenomics and distribution strategies advice.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Static code analysis with Sec3 for security.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Collaboration with Waterloo Blockchain Club.
-        </li>
-        <li className="flex items-start">
-          <span className="text-green-400 mr-2">✔</span> Professional-grade final report.
-        </li>
+              {deepDiveItems.map((item, index) => (
+                <li className="flex items-start before:content-[''] before:inline-block before:w-4 before:h-4 before:bg-[url('/images/list-item-ind.svg')] before:bg-contain before:bg-no-repeat before:mr-2" key={index}>
+                  {item}
+                </li>
+              ))}
       </ul>
       <hr className="border-t-2 border-gray-600 my-6" />
       <div className="mt-auto">

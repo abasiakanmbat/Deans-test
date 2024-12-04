@@ -71,8 +71,8 @@ const Testimonials = () => {
 			<div className="overflow-hidden relative">
 				<motion.div
 					className="flex space-x-6 animate-scroll mb-4"
-					initial={{ x: "0%" }}
-					animate={{ x: "-50%" }}
+					initial={{ x: "50%" }}
+					animate={{ x: "0%" }}
 					transition={{
 						repeat: Infinity,
 						duration: 20,
@@ -87,8 +87,8 @@ const Testimonials = () => {
 				</motion.div>
 				<motion.div
 					className="flex space-x-6 animate-scroll"
-					initial={{ x: "-50%" }}
-					animate={{ x: "0%" }}
+					initial={{ x: "0%" }}
+					animate={{ x: "-50%" }}
 					transition={{
 						repeat: Infinity,
 						duration: 20,
