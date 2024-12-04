@@ -22,12 +22,15 @@ function NavBar() {
 					<li><Link href="#services">Services</Link></li>
 					<li><Link href="#about-us">About Us</Link></li>
 					<li><Link href="#events">Events</Link></li>
-					<li><Link href="#states" className="flex items-center gap-1">Network States <ChevronDown /></Link></li>
+					<li><Link href="#states" className="flex items-center gap-1">Leaderboard </Link></li>
 				</ul>
 			</nav>
 
 			<div>
-				<Button text="Get Started" />
+			<button className=" bg-[#9A59BA80] py-2 px-6 rounded-full border border-[#9A59BA] font-medium hover:bg-purple-400 transition flex gap-2 items-center">
+					
+					Get Started
+				</button>
 			</div>
 		</header>
 	);

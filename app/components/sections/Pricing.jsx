@@ -59,11 +59,11 @@ function Pricing() {
               ))}
       </ul>
       <hr className="border-t-2 border-gray-600 my-6" />
-      <div className="mt-auto">
+      <div className="mt-auto flex flex-row justify-center items-center">
         <p className="text-3xl font-bold">
           $999 <span className="text-sm">per session</span>
         </p>
-        <button className="bg-[#70328F] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-4">
+        <button className="bg-[#70328F] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-4 ml-10">
           Get Started
         </button>
       </div>
@@ -71,7 +71,7 @@ function Pricing() {
 
     {/* Feedback Bonanza PLUS */}
           <div className="bg-purple-900 text-white p-6 shadow-lg flex flex-col h-full card-animated-border relative">
-      <div className="absolute top-4 right-4 bg-purple-700 text-xs font-bold px-2 py-1 rounded-full">
+      <div className="absolute top-7 right-1.5 bg-purple-700 text-xs font-bold px-2 py-1 rounded-full ">
         Most Popular
       </div>
       <h2 className="text-xl font-bold mb-4">Feedback Bonanza PLUS</h2>
@@ -86,12 +86,12 @@ function Pricing() {
                 </li>
               ))}
       </ul>
-      <hr className="border-t-2 border-gray-600 my-6" />
-      <div className="mt-auto">
+      <hr className="border-t-2 border-gray-600 my-6 mt-32" />
+      <div className="mt-auto flex flex-row justify-center items-center">
         <p className="text-3xl font-bold">
           $1499 <span className="text-sm">per session</span>
         </p>
-        <button className="bg-black hover:bg-gray-600 text-white font-bold py-2 px-4 rounded mt-4">
+        <button className="bg-black hover:bg-gray-600 text-white font-bold py-2 px-4 rounded mt-4 ml-7">
           Get Started
         </button>
       </div>
@@ -101,7 +101,7 @@ function Pricing() {
           <div className="bg-[#1a0d2d] text-white p-6 shadow-lg flex flex-col h-full card-animated-border">
       <h2 className="text-xl font-bold mb-4">
         Deep Dive Assessment{" "}
-        <span className="bg-purple-700 text-xs font-bold px-2 py-1 rounded-full">
+        <span className="bg-purple-700 text-xs font-bold px-2 py-1 rounded-full ">
           Exclusive
         </span>
       </h2>
@@ -116,12 +116,12 @@ function Pricing() {
                 </li>
               ))}
       </ul>
-      <hr className="border-t-2 border-gray-600 my-6" />
-      <div className="mt-auto">
+      <hr className="border-t-2 border-gray-600 my-6 mt-14" />
+      <div className="mt-auto flex flex-row justify-center items-center">
         <p className="text-3xl font-bold">
           $4,999 <span className="text-sm">per session</span>
         </p>
-        <button className="bg-[#70328F] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-4">
+        <button className="bg-[#70328F] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-4 ml-5">
           Get Started
         </button>
       </div>

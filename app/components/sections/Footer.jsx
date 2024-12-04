@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import { ChevronDown } from "lucide-react";
 
 
 function Footer() {
@@ -30,11 +31,9 @@ function Footer() {
       <div className="relative inline-block">
     <button onClick={toggleDropdown} className="hover:text-gray-300 flex items-center">
       Network State
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 ml-1">
-        <path d="M19 9l-7 7-7-7" />
-      </svg>
+      <ChevronDown />
        </button>
-    <div className={`absolute ${isDropdownOpen ? 'block' : 'hidden'} bg-gray-800 text-white rounded-md shadow-md mt-2 w-32`}>
+    <div className={`absolute ${isDropdownOpen ? 'block' : 'hidden'} bg-[#814D9A1A] text-white rounded-md shadow-md mt-2 w-32`}>
       <a href="#" className="block px-4 py-2 hover:bg-gray-700 ">Deanslist NG</a>
       <a href="#" className="block px-4 py-2 hover:bg-gray-700">Deanslist BR</a>
       

@@ -7,8 +7,8 @@ function Hero() {
 	return (
 		<div className="pt-20 px-4 text-center flex flex-col items-center">
 			{/* Badge Section */}
-			<div className="flex justify-center items-center space-x-4 mb-6 bg-purple-500 p-1 rounded-full cursor-pointer">
-				<span className="bg-white text-purple-500 text-sm py-1 px-3 rounded-full">
+			<div className="flex justify-center items-center space-x-4 mb-6 bg-[#9A59BA80] p-1 rounded-full cursor-pointer">
+				<span className="bg-white text-[#9A59BA] text-sm py-1 px-3 rounded-full">
 					New feature
 				</span>
 				<p
@@ -32,7 +32,7 @@ function Hero() {
 
 			{/* Buttons */}
 			<div className="flex justify-center space-x-4">
-				<button className="bg-purple-500 py-2 px-6 rounded-lg font-medium hover:bg-purple-600 transition flex gap-2 items-center">
+				<button className=" bg-[#9A59BA80] py-2 px-6 rounded-full border border-[#9A59BA] font-medium hover:bg-purple-400 transition flex gap-2 items-center">
 					<CircleArrowUp />
 					Get Started
 				</button>
