@@ -5,10 +5,10 @@ function Trusties() {
  
 
   return (
-    <div className="w-screen bg-gradient-to-r from-purple-900 to-black h-40 flex justify-center items-center text-white pt-20">
+    <div className="w-screen h-40 flex justify-center items-center text-white pt-20">
       <div className="w-[1000px] flex flex-col items-center pt-12">
         <h6 className="text-white text-sm font-semibold mb-4">
-          We've been trusted by <em>founders</em> from
+          We&apos;ve been trusted by <em>founders</em> from
         </h6>
         <div className="overflow-hidden relative w-full h-64 pt-4">
       <div className="flex animate-scroll ">

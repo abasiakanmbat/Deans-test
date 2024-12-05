@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import TestimonialCard from "../ui/TestimonialCard";
+import SectionHeader from "../ui/SectionHeader";
 
 const testimonials = [
 	{
@@ -55,14 +56,14 @@ const Testimonials = () => {
 	const bottomScrollingTestimonials = [...testimonials.slice(3), ...testimonials.slice(3)];
 
 	return (
-		<div className="bg-gradient-to-r from-purple-900 to-black py-16 px-4">
-			{/* Section Header */}
-			<div className="text-center mb-12">
+		<div className="py-16 px-4 relative">
+			<SectionHeader title="Testimonials" />
+			<div className="md:text-center mb-12">
 				<h2 className="text-white text-4xl font-bold">
-					They say it <span className="italic text-purple-400">better</span> than we do!
+					They say it <span className="font-light font-editorial-new">better</span> than we do!
 				</h2>
 				<p className="text-gray-300 mt-4">
-					We’re proud to be working with these incredible and outstanding
+					We&apos;re proud to be working with these incredible and outstanding
 					projects, and thankful for their feedback, suggestions, and support.
 				</p>
 			</div>

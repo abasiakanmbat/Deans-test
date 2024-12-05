@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import SectionHeader from "../ui/SectionHeader";
 
 
 const Services = () => {
@@ -22,11 +23,12 @@ const Services = () => {
 	};
 
 	return (
-		<div className="py-16 px-12">
+		<div className="py-16 px-12 relative" id="services">
+			<SectionHeader title="Services" />
 			{/* Header Section */}
-			<div className="text-center mb-12">
+			<div className="md:text-center mb-12">
 				<h2 className="text-4xl font-bold">
-					Community of Web3 <span className="italic text-purple-400">power users</span>.
+					Community of Web3 <span className="font-editorial-new font-light">power users</span>.
 				</h2>
 				<p className="text-gray-300 mt-4 max-w-3xl mx-auto">
 					As experienced Web3 users, we provide in-depth feedback sessions and a suite of consulting services to
@@ -70,43 +72,52 @@ const Services = () => {
 					</div>
 				</div>
 
-				<div className="grid col-span-2 gap-4 grid-cols-[40%,1fr]">
+				<div className="grid grid-cols-1 md:col-span-2 gap-4 md:grid-cols-[40%,1fr]">
 					{/* Hackathon Judging */}
-					<div className="bg-purple-800 rounded-lg shadow-md p-6 flex flex-col space-y-4">
+					<div className="border-2 border-purple-600 rounded-lg shadow-md p-6 flex flex-col space-y-4">
 						<h3 className="text-2xl font-semibold">Hackathon Judging</h3>
-						<p className="text-gray-300">
+						<p className="text-purple-200">
 							The collective knowledge of our power users ensures that each project is assessed with a keen understanding
 							of the Web3 ecosystem.
 						</p>
-						<div className="flex space-x-2">
+						<div className="flex relative justify-center items-center flex-grow h-[200px]">
 							{/* Hackathon Badges */}
-							<div className="bg-purple-900 text-purple-300 px-4 py-2 rounded-md">
+							<div className="bg-gradient-to-r from-gray-700 to-gray-500 text-purple-300 px-4 py-2 rounded-md absolute top-0 left-0">
 								Renaissance Hackathon
 							</div>
-							<div className="bg-purple-900 text-purple-300 px-4 py-2 rounded-md">
+							<div className="bg-gradient-to-r from-[#D29808] to-[#8B680C] border border-[#D29808] text-purple-300 px-4 py-2 rounded-md absolute top-12 right-0">
 								Radar Hackathon
 							</div>
-							<div className="bg-purple-900 text-purple-300 px-4 py-2 rounded-md">
+							<div className="bg-black px-2 py-1 rounded-md absolute bottom-0 border border-white text-sm">
 								Hyperdrive Hackathon
 							</div>
+
+							<img src="/solana.png" alt="solana" className="w-24 h-24 p-4 rounded-full bg-black" />
 						</div>
 					</div>
 
 					{/* Feedback Bonanza */}
-					<div className="bg-purple-800 rounded-lg shadow-md p-6 flex flex-col space-y-4">
+					<div className="border-2 border-purple-600 rounded-lg shadow-md p-6 pb-0 pr-0 flex flex-col space-y-4">
 						<h3 className="text-2xl font-semibold">Feedback Bonanza: Live Feedback Session</h3>
 						<p className="text-gray-300">
 							Get real-time, in-depth reviews tailored to your project. Our live feedback sessions deliver actionable
 							insights to help you refine and elevate your product.
 						</p>
-						<div className="relative w-full h-40">
-							<Image
-								src="/images/marshmallow-app.png" // Replace with the actual image path
-								alt="Marshmallow App"
-								layout="fill"
-								objectFit="cover"
-								className="rounded-lg"
-							/>
+						<div className="relative w-full h-full grid grid-cols-[30%,1fr]">
+							<div className="relative hidden md:block">
+								<span className="bg-[#673882] p-2 px-3 rounded-full border border-purple-600 absolute top-2 text-sm">Bug fixing</span>
+								<span className="bg-[#673882] p-2 px-3 rounded-full border border-purple-600 absolute text-sm right-2 top-[35%]">Live testing</span>
+								<span className="bg-[#673882] p-2 px-3 rounded-full border border-purple-600 absolute bottom-8 left-2 text-sm">UI Improvements</span>
+							</div>
+							<div className="relative w-full h-full">
+								<Image
+									src="/images/feedbacksection.png" // Replace with the actual image path
+									alt="Marshmallow App"
+									layout="fill"
+									objectFit="cover"
+									className="rounded-lg"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>

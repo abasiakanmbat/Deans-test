@@ -16,12 +16,12 @@ function Footer() {
     </div>
       
       {/*Top middle content*/}
-    <nav className="flex space-x-4 gap-7">
+    <nav className="flex flex-row space-x-4 gap-7">
       <a href="#" className="hover:text-gray-300">Home</a>
-      <a href="#" className="hover:text-gray-300">Services</a>
-      <a href="#" className="hover:text-gray-300">About Us</a>
-      <a href="#" className="hover:text-gray-300">Events</a>
-      <a href="#" className="hover:text-gray-300">Leaderboard</a>
+          <a href="#services" className="hover:text-gray-300">Services</a>
+          <a href="#about-us" className="hover:text-gray-300">About Us</a>
+          <a href="#events" className="hover:text-gray-300">Events</a>
+          <a href="https://leaderboard.deanslist.services/" className="hover:text-gray-300">Leaderboard</a>
     </nav>
 
 
@@ -47,7 +47,7 @@ function Footer() {
 
     {/*Base content*/}
   <div className="flex justify-between items-center mt-4 pt-6">
-    <div className="flex space-x-4">
+    <div className="flex flex-row space-x-4">
       <a href="#" className="hover:text-gray-300">Documentation</a>
       <a href="https://www.tensor.trade/trade/deanslist" target='blank' className="hover:text-gray-300">NFT Store</a>
       <a href="#" className="hover:text-gray-300">Privacy</a>

@@ -31,14 +31,14 @@ const FAQs = [
 
 function FAQ() {
 	return (
-		<div className="grid grid-cols-2">
-			<div className="pl-16">
+		<div className="grid grid-cols-1 md:grid-cols-2 my-8 mb-32 p-2">
+			<div className="md:pl-16 relative">
 				<SectionHeader title="FAQ" />
-				<p className="text-2xl font-semibold">All the <i>A&rsquo;s</i> to your <i>Q&rsquo;s</i></p>
+				<p className="text-2xl font-semibold mt-12">All the <span className="font-light font-editorial-new">A&rsquo;s</span> to your <span className="font-light font-editorial-new">Q&rsquo;s</span></p>
 				<p className="font-extralight">Everything you need to know about our community.</p>
 			</div>
 
-			<div className="pr-16">
+			<div className="md:pr-16">
 				<Accordion type="single" collapsible className="w-full">
 					{
 						FAQs.map((faq, i) => <AccordionItem value={`item-${i}`} key={i}>

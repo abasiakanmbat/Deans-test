@@ -19,8 +19,8 @@ function Partners() {
 	];
   
 	return (
-	  <div className="w-screen bg-[#1a0d2d] h-96 flex justify-center items-center text-white">
-		<div className="w-[1000px] flex flex-col items-center">
+	  <div className="bg-[#1a0d2d] h-96 flex justify-center items-center text-white">
+		<div className="flex flex-col items-center">
 		  <h6 className="text-white text-sm font-semibold mb-4">Partners</h6>
 		  <h4 className="text-white text-2xl font-bold mb-4">
 			Our <em>partners</em> are our strength

@@ -8,6 +8,11 @@ module.exports = {
   ],
   theme: {
   	extend: {
+		  fontFamily: {
+			  inter: ['var(--font-inter)'],
+			  'editorial-new': ['var(--font-editorial-new)']
+		  },
+
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -75,10 +80,10 @@ module.exports = {
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				bounce: 'bounce 2s infinite',
   		}
   	}
   },
   plugins: [require("tailwindcss-animate")],
 };
-

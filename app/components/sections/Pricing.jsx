@@ -1,3 +1,4 @@
+import SectionHeader from "../ui/SectionHeader";
 
 
 function Pricing() {
@@ -39,14 +40,14 @@ function Pricing() {
 
 
 	return (
-		<div className="w-screen bg-gradient-to-r from-purple-900 to-black flex flex-col justify-center items-center text-white">
+    <div className="w-screen lex flex-col justify-center items-center text-white relative">
+      <SectionHeader title="Pricing" isLeft={false} />
 			<div className="flex flex-col items-center p-10">
-			<h6 className="text-white text-sm font-semibold mb-4">pricing</h6>
-			  <h4 className="text-white text-2xl font-bold mb-4">Plans that fit your <em>scale</em></h4>
+        <h4 className="text-white text-2xl font-bold mb-4">Plans that fit your <span className="font-light font-editorial-new">scale</span></h4>
 			  <h5>No additional fees or hidden costs.</h5>
 			</div>
     
-      <div className="flex flex-col items-center bg-gradient-to-r from-purple-900 to-black p-8">
+      <div className="flex flex-col p-8 items-center">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl">
     {/* Feedback Bonanza */}
           <div className="bg-[#1a0d2d] text-white p-6 shadow-lg flex flex-col h-full card-animated-border">
@@ -55,20 +56,21 @@ function Pricing() {
       Live expert feedback on X, YouTube, and Twitch to optimize your dApp.
       </p>
       <h3 className="text-lg font-semibold mb-4">Features</h3>
-            <ul className="space-y-2 text-sm list-[url('/images/list-item-ind.svg')">
+            <ul className="space-y-2 text-sm">
 
               {bonanzaItems.map((item, index) => (
-                <li className="flex items-start before:content-[''] before:inline-block before:w-4 before:h-4 before:bg-[url('/images/list-item-ind.svg')] before:bg-contain before:bg-no-repeat before:mr-2" key={index}>
+                <li className="flex items-start" key={index}>
+                  <img src={index <= 5 ? "/images/list-item-ind.svg" : "/images/list-item-ind2.svg"} alt="" className="w-6 h-6 mr-2" />
                   {item}
                 </li>
               ))}
       </ul>
       <hr className="border-t-2 border-gray-600 my-6 mt-20" />
-      <div className="mt-auto flex flex-row justify-center items-center">
+      <div className="mt-auto flex flex-col md:flex-row md:justify-center items-center">
         <p className="text-3xl font-bold">
           $999 <span className="text-sm">per session</span>
         </p>
-        <a href="https://discord.gg/deanslist" target="blank"  rel="noopener noreferrer"><button className="bg-[#70328F] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-4 ml-10">
+        <a href="https://discord.gg/deanslist" target="blank"  rel="noopener noreferrer" className="w-full"><button className="bg-[#70328F] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-4 md:ml-10 w-full md:w-fit">
           Get Started
         </button>
         </a>
@@ -87,17 +89,18 @@ function Pricing() {
       <h3 className="text-lg font-semibold mb-4">Features</h3>
       <ul className="space-y-2 text-sm">
               {bonanzaPlusItems.map((item, index) => (
-                <li className="flex items-start before:content-[''] before:inline-block before:w-4 before:h-4 before:bg-[url('/images/list-item-ind.svg')] before:bg-contain before:bg-no-repeat before:mr-2" key={index}>
+                <li className="flex items-start" key={index}>
+                  <img src="/images/list-item-ind.svg" alt="" className="w-6 h-6 mr-2" />
                   {item}
                 </li>
               ))}
       </ul>
       <hr className="border-t-2 border-gray-600 my-6 mt-20" />
-      <div className="mt-auto flex flex-row justify-center items-center">
+      <div className="mt-auto flex flex-col md:flex-row md:justify-center items-center">
         <p className="text-3xl font-bold">
           $1499 <span className="text-sm">per session</span>
         </p>
-        <a href="https://discord.gg/deanslist" target="blank"  rel="noopener noreferrer"><button className="bg-black hover:bg-gray-600 text-white font-bold py-2 px-4 rounded mt-4 ml-7">
+        <a href="https://discord.gg/deanslist" target="blank"  rel="noopener noreferrer" className="w-full"><button className="bg-black hover:bg-gray-600 text-white font-bold py-2 px-4 rounded mt-4 md:ml-7 w-full md:w-fit">
           Get Started
         </button>
         </a>
@@ -118,17 +121,18 @@ function Pricing() {
       <h3 className="text-lg font-semibold mb-4">Features</h3>
       <ul className="space-y-2 text-sm">
               {deepDiveItems.map((item, index) => (
-                <li className="flex items-start before:content-[''] before:inline-block before:w-4 before:h-4 before:bg-[url('/images/list-item-ind.svg')] before:bg-contain before:bg-no-repeat before:mr-2" key={index}>
+                <li className="flex items-start" key={index}>
+                  <img src="/images/list-item-ind.svg" alt="" className="w-6 h-6 mr-2" />
                   {item}
                 </li>
               ))}
       </ul>
       <hr className="border-t-2 border-gray-600 my-6 " />
-      <div className="mt-auto flex flex-row justify-center items-center">
+      <div className="mt-auto flex flex-col md:flex-row md:justify-center items-center">
         <p className="text-3xl font-bold">
           $4,999 <span className="text-sm">per session</span>
         </p>
-        <a href="https://discord.gg/deanslist" target="blank"  rel="noopener noreferrer"><button className="bg-[#70328F] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-4 ml-5">
+        <a href="https://discord.gg/deanslist" target="blank"  rel="noopener noreferrer" className="w-full"><button className="bg-[#70328F] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-4 md:ml-5 w-full md:w-fit">
           Get Started
         </button>
         </a>

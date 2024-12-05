@@ -9,14 +9,16 @@ import {
 	CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from 'next/image';
+import SectionHeader from '../ui/SectionHeader';
 
 
 const Events = () => {
 	return (
-		<section className="bg-gradient-to-b from-purple-900 to-black text-white py-20">
+		<section className="py-20 relative" id="events">
+			<SectionHeader title="Events" isLeft={false} />
 			{/* Title Section */}
-			<div className="text-center mb-12">
-				<h2 className="text-4xl font-bold mb-4">Community <span className="italic">events</span> and <span className="italic">conferences</span>.</h2>
+			<div className="md:text-center mb-12">
+				<h2 className="text-4xl font-bold mb-4">Community <span className="font-light font-editorial-new">events</span> and <span className="font-light font-editorial-new">conferences</span>.</h2>
 				<p className="text-lg max-w-3xl mx-auto">
 					Stay informed on recent DAO events and gatherings featuring our members. Get exclusive recaps from our community&apos;s latest engagements.
 				</p>
@@ -45,11 +47,11 @@ const Events = () => {
 						<CarouselNext />
 					</Carousel>
 
-					<div className='grid grid-cols-[1fr,auto] text-sm items-center'>
+					<div className='grid grid-cols-1 md:grid-cols-[1fr,auto] text-sm items-center'>
 						<p className="text-base mb-6">
 							The community-run conference focused on DAOs and digital Governance Tools. Experience the highlights of AthensDAOx conference!
 						</p>
-						<a href="https://island-dao.com/" target="blank"  rel="noopener noreferrer"><button className=" bg-[#0A1494] px-3 py-2 rounded-full font-semibold w-fit h-fit hover:bg-blue-600 transition">
+						<a href="#" className='w-full' target="blank"  rel="noopener noreferrer"><button className=" bg-[#0A1494] px-3 py-2 rounded-full font-semibold w-full md:w-fit h-fit hover:bg-blue-600 transition">
 							Explore the fun!
 						</button>
 						</a>
@@ -77,11 +79,11 @@ const Events = () => {
 						<CarouselNext />
 					</Carousel>
 
-					<div className='grid grid-cols-[1fr,auto] text-sm items-center'>
+					<div className='grid grid-cols-1 md:grid-cols-[1fr,auto] text-sm items-center'>
 						<p className="text-base mb-6">
 							A one month co-working event on the Island, Experience the highlights of IslandDAOx lives event! Presented by DeanslistDAO
 						</p>
-						<a href="https://island-dao.com/" target="blank"  rel="noopener noreferrer"><button className=" bg-[#081E20] px-3 py-2 rounded-full font-semibold w-fit h-fit hover:bg-gray-600 transition">
+						<a href="#" target="blank"  rel="noopener noreferrer" className="w-full"><button className=" bg-[#081E20] px-3 py-2 rounded-full font-semibold w-full md:w-fit h-fit hover:bg-gray-600 transition">
 							Explore the fun!
 						</button>
 						</a>

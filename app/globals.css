@@ -127,6 +127,10 @@
   }
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -135,4 +139,3 @@
     @apply bg-background text-foreground;
   }
 }
-
