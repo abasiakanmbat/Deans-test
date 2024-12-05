@@ -33,7 +33,7 @@ const Events = () => {
 
 					<Carousel className="w-full">
 						<CarouselContent>
-							{["/images/events/event1.png", "/images/events/event2.png"].map((src, index) => (
+							{[ "/images/events/event2.png", "/images/events/event1.png"].map((src, index) => (
 								<CarouselItem key={index}>
 									<div className="p-1 h-[240px] overflow-hidden rounded-md">
 										<Image src={src} alt='event1' fill />
@@ -49,9 +49,10 @@ const Events = () => {
 						<p className="text-base mb-6">
 							The community-run conference focused on DAOs and digital Governance Tools. Experience the highlights of AthensDAOx conference!
 						</p>
-						<button className=" bg-[#0A1494] px-3 py-2 rounded-full font-semibold w-fit h-fit">
+						<a href="https://island-dao.com/" target="blank"  rel="noopener noreferrer"><button className=" bg-[#0A1494] px-3 py-2 rounded-full font-semibold w-fit h-fit hover:bg-blue-600 transition">
 							Explore the fun!
 						</button>
+						</a>
 					</div>
 				</div>
 
@@ -80,9 +81,10 @@ const Events = () => {
 						<p className="text-base mb-6">
 							A one month co-working event on the Island, Experience the highlights of IslandDAOx lives event! Presented by DeanslistDAO
 						</p>
-						<button className=" bg-[#081E20] px-3 py-2 rounded-full font-semibold w-fit h-fit">
+						<a href="https://island-dao.com/" target="blank"  rel="noopener noreferrer"><button className=" bg-[#081E20] px-3 py-2 rounded-full font-semibold w-fit h-fit hover:bg-gray-600 transition">
 							Explore the fun!
 						</button>
+						</a>
 					</div>
 				</div>
 

@@ -27,10 +27,12 @@ function NavBar() {
 			</nav>
 
 			<div>
-			<button className=" bg-[#9A59BA80] py-2 px-6 rounded-full border border-[#9A59BA] font-medium hover:bg-purple-400 transition flex gap-2 items-center">
+			<a href="https://discord.gg/deanslist" target="blank"  rel="noopener noreferrer"><button className=" bg-[#9A59BA80] py-2 px-6 rounded-full border border-[#9A59BA] font-medium hover:bg-purple-400 transition flex gap-2 items-center">
 					
 					Get Started
 				</button>
+				</a>
+
 			</div>
 		</header>
 	);

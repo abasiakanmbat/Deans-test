@@ -32,10 +32,11 @@ function Hero() {
 
 			{/* Buttons */}
 			<div className="flex justify-center space-x-4">
-				<button className=" bg-[#9A59BA80] py-2 px-6 rounded-full border border-[#9A59BA] font-medium hover:bg-purple-400 transition flex gap-2 items-center">
+			<a href="https://discord.gg/deanslist" target="blank"  rel="noopener noreferrer"><button className=" bg-[#9A59BA80] py-2 px-6 rounded-full border border-[#9A59BA] font-medium hover:bg-purple-400 transition flex gap-2 items-center">
 					<CircleArrowUp />
 					Get Started
 				</button>
+				</a>	
 				<button className="text-white py-2 px-6 rounded-lg font-medium hover:bg-white hover:text-purple-900 transition flex gap-2 items-center">
 					Learn more <ArrowDown />
 				</button>

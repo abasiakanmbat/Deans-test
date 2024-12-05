@@ -20,7 +20,7 @@ const FAQs = [
 		answer: "Laborum quis voluptate ipsum aliqua Lorem mollit ex eu incididunt. Commodo quis occaecat dolore commodo excepteur ad qui ad in. Aliquip elit nisi nostrud incididunt laborum. Consectetur laborum cupidatat voluptate eiusmod proident est fugiat duis enim.",
 	},
 	{
-		question: "What th benefits of joining the community?",
+		question: "What the benefits of joining the community?",
 		answer: "Proident est aliqua id sint labore in ad non ullamco esse pariatur proident. Sit occaecat Lorem aute veniam labore nisi incididunt aute do fugiat amet ipsum do in. Eu aliqua aute nulla excepteur incididunt excepteur eu."
 	},
 	{

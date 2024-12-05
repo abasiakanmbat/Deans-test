@@ -1,14 +1,9 @@
 "use client"
 import React, { useState } from 'react';
-import { ChevronDown } from "lucide-react";
+
 
 
 function Footer() {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
 
 	return (
 		<footer className="bg-[#1a0d2d] text-white p-16">
@@ -26,20 +21,7 @@ function Footer() {
       <a href="#" className="hover:text-gray-300">Services</a>
       <a href="#" className="hover:text-gray-300">About Us</a>
       <a href="#" className="hover:text-gray-300">Events</a>
-
-      {/*Network State Dropdown*/}
-      <div className="relative inline-block">
-    <button onClick={toggleDropdown} className="hover:text-gray-300 flex items-center">
-      Network State
-      <ChevronDown />
-       </button>
-    <div className={`absolute ${isDropdownOpen ? 'block' : 'hidden'} bg-[#814D9A1A] text-white rounded-md shadow-md mt-2 w-32`}>
-      <a href="#" className="block px-4 py-2 hover:bg-gray-700 ">Deanslist NG</a>
-      <a href="#" className="block px-4 py-2 hover:bg-gray-700">Deanslist BR</a>
-      
-    </div>
-    </div>
- 
+      <a href="#" className="hover:text-gray-300">Leaderboard</a>
     </nav>
 
 

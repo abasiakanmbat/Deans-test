@@ -24,7 +24,7 @@ function Branches() {
 					
 					<div className="flex flex-row pt-5 gap-16  ">
 					<h3>Visit our regional office to get in touch with DeanslistNG community members and learn more about us.</h3>
-					<button className="border-2 border-[#51CC8B] rounded-full w-[200px] h-12 bg-green-500 ">Learn More!</button>
+					<a href="https://deanslistng.com/" target="blank"  rel="noopener noreferrer"><button className="border-2 border-[#51CC8B] rounded-full w-[200px] h-12 bg-green-500 hover:bg-green-300 transition ">Learn More!</button></a>
 					</div>
 					
 					</div>
@@ -42,7 +42,7 @@ function Branches() {
 						</div>
 						<div className="flex flex-row pt-5 gap-16 ">
 							<h3>Visit our regional office to get in touch with DeanslistBR community members and learn more about us.</h3>
-							<button className="border-2 border-[#D6BE16] rounded-full w-[200px] h-12 bg-[#AD9907] ">Learn More!</button>
+							<a href="https://web-site-deanslist.vercel.app/" target="blank"  rel="noopener noreferrer"><button className="border-2 border-[#D6BE16] rounded-full w-[200px] h-12 bg-[#AD9907] hover:bg-yellow-300 transition">Learn More!</button></a>
 						</div>
 					</div>
 					
