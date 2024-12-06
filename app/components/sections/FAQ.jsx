@@ -13,19 +13,19 @@ const FAQs = [
 	},
 	{
 		question: "How can i join the community?",
-		answer: "Cillum laborum sunt commodo reprehenderit quis aliqua commodo pariatur ex. Fugiat ad irure excepteur consectetur nisi consequat sint occaecat cillum. Exercitation in proident elit aute officia dolore eu fugiat Lorem proident velit voluptate ea nostrud. Incididunt nisi aute dolor id."
+		answer: "Join our discord to connect with the community and participate in discussions and Follow on Twitter/X to Stay updated!."
 	},
 	{
-		question: "The different between basic feedback and feedback bonanza?",
-		answer: "Laborum quis voluptate ipsum aliqua Lorem mollit ex eu incididunt. Commodo quis occaecat dolore commodo excepteur ad qui ad in. Aliquip elit nisi nostrud incididunt laborum. Consectetur laborum cupidatat voluptate eiusmod proident est fugiat duis enim.",
+		question: "The different between feedback bonanza and feedback bonanza plus?",
+		answer: "Feedback Bonanza helps sellers gather feedback and increase visibility with basic tools for communication and order fulfillment. Feedback Bonanza Plus offers additional features like expanded marketing tools, personalized support, and advanced analytics to boost seller credibility and promotion. The Plus version provides a more comprehensive approach for enhancing your apps\s potential.",
 	},
 	{
 		question: "What the benefits of joining the community?",
-		answer: "Proident est aliqua id sint labore in ad non ullamco esse pariatur proident. Sit occaecat Lorem aute veniam labore nisi incididunt aute do fugiat amet ipsum do in. Eu aliqua aute nulla excepteur incididunt excepteur eu."
+		answer: "Joining the DeansListDAO community offers networking opportunities with like-minded individuals and professionals. You can collaborate on community-driven projects and contribute your skills to shape the future of the DAO. Members often get access to exclusive events, updates, and content. You may also have voting power to influence key decisions. Additionally, being part of the community provides opportunities for learning, growth, and recognition within the Web3 and blockchain space."
 	},
 	{
 		question: "When is the grant program available?",
-		answer: "Proident adipisicing reprehenderit incididunt ex exercitation cillum aute dolor nulla eiusmod amet incididunt. Exercitation est dolore tempor adipisicing qui esse in ea est id aliqua mollit officia nisi. Lorem fugiat dolor quis adipisicing incididunt nulla quis. Nulla magna non est ipsum ea anim consequat ad voluptate. Cillum ullamco esse eu cupidatat in eiusmod labore dolor dolor magna deserunt."
+		answer: "Join our community and proceed to the 'Grants program' channel for more updates."
 	}
 ]
 

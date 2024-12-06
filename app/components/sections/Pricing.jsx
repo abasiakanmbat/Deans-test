@@ -70,7 +70,7 @@ function Pricing() {
         <p className="text-3xl font-bold">
           $999 <span className="text-sm">per session</span>
         </p>
-        <a href="https://discord.gg/deanslist" target="blank"  rel="noopener noreferrer" className="w-full"><button className="bg-[#70328F] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-4 md:ml-10 w-full md:w-fit">
+        <a href="https://discord.gg/deanslist" target="blank"  rel="noopener noreferrer" className="w-full"><button className="bg-[#70328F] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-4  md:ml-10 w-full md:w-fit">
           Get Started
         </button>
         </a>
