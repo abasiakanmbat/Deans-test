@@ -40,9 +40,9 @@ function Footer() {
       {/* Base content */}
       <div className="flex flex-col sm:flex-row justify-between items-center mt-4 space-y-4 sm:space-y-0">
         <div className="flex flex-col sm:flex-row text-center sm:space-x-4 space-y-3 sm:space-y-0">
-          <a href="#" className="hover:text-gray-300">Documentation</a>
+          <a href="#" className="hover:text-gray-300" target="blank">Documentation</a>
           <a href="https://www.tensor.trade/trade/deanslist" target="blank" className="hover:text-gray-300">NFT Store</a>
-          <a href="#" className="hover:text-gray-300">Privacy</a>
+          <a href="/privacy" className="hover:text-gray-300" target="blank">Privacy</a>
         </div>
         <p className="text-center">&copy; {new Date().getFullYear()} DeanslistDAO. All rights reserved.</p>
       </div>
