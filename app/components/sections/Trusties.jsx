@@ -13,6 +13,51 @@ function Trusties() {
         <div className="overflow-hidden relative w-full h-64 pt-4">
       <div className="flex animate-scroll ">
         <img
+          src="image 209 (1).png"
+          alt="Image 1"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 187 (1).png"
+          alt="Image 1"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 210 (1).png"
+          alt="Image 1"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 214 (1).png"
+          alt="Image 1"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 215 (2).png"
+          alt="Image 1"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 218 (1).png"
+          alt="Image 1"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 219 (1).png"
+          alt="Image 1"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 227 (1).png"
+          alt="Image 1"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 233 (1).png"
+          alt="Image 1"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
           src="realms.png"
           alt="Image 1"
           className="w-12 h-12 flex-shrink-0 object-cover mr-4"
@@ -88,7 +133,47 @@ function Trusties() {
           className="w-12 h-12 flex-shrink-0 object-cover mr-4"
         />
         <img
-          src="gib.png"
+          src="image 211 (2).png"
+          alt="Image 2"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 216 (1).png"
+          alt="Image 2"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 220 (1).png"
+          alt="Image 2"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 231 (1).png"
+          alt="Image 2"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 234 (1).png"
+          alt="Image 2"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 228 (1).png"
+          alt="Image 2"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 232 (1).png"
+          alt="Image 2"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 224 (1).png"
+          alt="Image 2"
+          className="w-12 h-12 flex-shrink-0 object-cover mr-4"
+        />
+        <img
+          src="image 229 (1).png"
           alt="Image 2"
           className="w-12 h-12 flex-shrink-0 object-cover mr-4"
         />
