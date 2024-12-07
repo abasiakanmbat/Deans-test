@@ -13,9 +13,7 @@ function Partners() {
 	  { img: "anthensdao.png", name: "AthensDAOx", link: "https://x.com/athensdao"  },
 	  { img: "waterloo.png", name: "University of Waterloo", link: "https://uwaterloo.ca/"  },
 	  { img: "sec.png", name: "Sec3", link: "https://pro.sec3.dev/"  },
-	  { img: "metaplex.png", name: "Metaplex", link: "https://www.metaplex.com/"  },
-	  
-	  
+		{ img: "metaplex.png", name: "Metaplex", link: "https://www.metaplex.com/" },
 	];
   
 	return (
@@ -23,7 +21,7 @@ function Partners() {
 		<div className="w-[1000px] flex flex-col items-center">
 		  <h6 className="text-white text-sm font-semibold mb-4">Partners</h6>
 		  <h4 className="text-white text-2xl font-bold mb-4">
-			Our <em>partners</em> are our strength
+					Our <span className="font-light font-editorial-new">partners</span> are our strength
 		  </h4>
 		  <div className="overflow-hidden w-full">
 			
