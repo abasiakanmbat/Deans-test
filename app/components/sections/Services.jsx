@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionHeader from "../ui/SectionHeader";
+import ReactPlayer from "react-player";
 
 
 const Services = () => {
@@ -110,13 +111,7 @@ const Services = () => {
 								<span className="bg-[#673882] p-2 px-3 rounded-full border border-purple-600 absolute bottom-8 left-2 text-sm">UI Improvements</span>
 							</div>
 							<div className="relative w-full h-full">
-								<Image
-									src="/images/feedbacksection.png" // Replace with the actual image path
-									alt="Marshmallow App"
-									layout="fill"
-									objectFit="cover"
-									className="rounded-lg"
-								/>
+								<ReactPlayer url="https://www.youtube.com/watch?v=KaR7gu06tUE" width="100%" height="100%" />
 							</div>
 						</div>
 					</div>
