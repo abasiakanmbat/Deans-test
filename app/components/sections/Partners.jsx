@@ -18,10 +18,10 @@ function Partners() {
 	];
 
 	return (
-		<div className="bg-[#1a0d2d] h-96 flex justify-center items-center text-white">
+		<div className=" h-96 flex justify-center items-center text-white">
 			<div className="w-[1000px] flex flex-col items-center">
 				<h6 className="text-white text-sm md:text-[16px] font-semibold mb-4">Partners</h6>
-				<h4 className="text-white text-2xl  font-bold mb-4">
+				<h4 className="text-white xl:text-[36px]  font-bold mb-4">
 					Our <span className="font-light font-editorial-new">partners</span> are our strength
 				</h4>
 				<div className="overflow-hidden w-full">
@@ -42,16 +42,16 @@ function Partners() {
 							{partners.map((partner, index) => (
 								<li
 									key={index}
-									className="flex items-center justify-between gap-4 px-4 py-2"
+									className="flex items-center justify-between gap-4 px-4 py-2 "
 								>
 									<a href={partner.link} target="blank" rel="noopener noreferrer"
 										className="flex items-center gap-4">
 										<img
 											src={partner.img}
 											alt={partner.name}
-											className="w-8 h-8 rounded-full"
+											className="w-[40px] h-[40px] "
 										/>
-										<span className="text-sm font-medium">{partner.name}</span></a>
+										<span className="text-[24px] font-[600px]">{partner.name}</span></a>
 								</li>
 							))}
 						</motion.ul>

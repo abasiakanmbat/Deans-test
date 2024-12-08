@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content="image/svg+xml" />
       </head>
       <body
-        className={`${inter.className} ${newEditorial.variable} antialiased bg-[#160A26] text-white font-inter`}
+        className={`${inter.className} ${newEditorial.variable} antialiased bg-[#090118] text-white font-inter`}
       >
         {children}
       </body>

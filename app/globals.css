@@ -135,6 +135,32 @@
     @apply border-border;
   }
   body {
+    /* background-color: #090118; */
     @apply bg-background text-foreground;
+    overflow-x:hidden ;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  html,body, #__next{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x:hidden ;
   }
 }
+
+.shadow-2xl {
+  --tw-shadow: 0 0px 25px 5px #1A29D980;
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow2-2xl {
+  --tw-shadow: 0 0px 25px 5px #061E1E80;
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+

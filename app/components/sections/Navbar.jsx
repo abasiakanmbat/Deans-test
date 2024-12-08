@@ -1,9 +1,35 @@
 "use client"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 function NavBar() {
+  const [sticky, setSticky] = useState(false);
+  
+
+  useEffect(()=>{
+
+    window.addEventListener('scroll', ()=>{
+      (window.scrollY > 50) ? setSticky(true) : setSticky(false);
+      console.log(sticky);
+
+    })
+
+    return()=>{
+      window.addEventListener('scroll', ()=>{
+        (window.scrollY > 50) ? setSticky(true) : setSticky(false);
+        console.log(sticky);
+      })
+    }
+  },[]);
+
+
+  const[mobileMenu, setMobileMenu] = useState(false)
+  const toogleMenu = ()=>{
+    mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
+  }
+
+
   // State for toggling the mobile menu
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,7 +40,7 @@ function NavBar() {
 
   return (
 
-      <div className="sticky top-0 z-50 bg-[#160A26] border border-[#160A26] pb-5">
+      <div id="nav" className={sticky?"sticky top-0 z-50 bg-red-700  pb-5":" sticky top-0 z-50  pb-5"}>
     <header className=" flex justify-between md:max-xl:mx-16 xl:w-[75%] mx-auto md:mt-10 bg-[#814D9A1A] bg-opacity-10 px-9 py-5 items-center relative rounded-lg ">
       {/* Logo */}
 

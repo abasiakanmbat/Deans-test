@@ -25,28 +25,32 @@ const Services = () => {
 
 	return (
 		<div className="py-16 px-12 relative" id="services">
+				{/* Background blur effect  */}
+		<div className="absolute  h-[1052px] w-[277px] bg-[#9A59BA] rounded-[100%] -top-[10rem] -left-[8rem] -rotate-[45deg] blur-[390px] "></div>
+		<div className="absolute  h-[1052px] w-[277px] bg-[#9A59BA] rounded-[100%] -top-[0rem] -right-[8rem] rotate-[45deg] blur-[390px] "></div>
+			
 			<SectionHeader title="Services" />
 			{/* Header Section */}
 			<div className="md:text-center mb-12">
 				<h2 className="text-4xl font-bold">
 					Community of Web3 <span className="font-editorial-new font-light">power users</span>.
 				</h2>
-				<p className="text-gray-300 mt-4 max-w-3xl mx-auto">
+				<p className="text-gray-300 mt-4  mx-auto text-[20px]">
 					As experienced Web3 users, we provide in-depth feedback sessions and a suite of consulting services to
-					projects looking to thrive in the space. From product quality to user experience, we’re here to elevate
+					projects looking to thrive <br /> in the space. From product quality to user experience, we’re here to elevate
 					your project to the next level.
 				</p>
 			</div>
 
 			{/* Services Section */}
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-4  xl:w-[1250px] mx-auto">
 
 				{/* Feedback Review */}
-				<div className="rounded-xl shadow-md flex flex-col space-y-4 overflow-hidden border-2 border-purple-600">
+				<div className="rounded-lg shadow-md flex flex-col space-y-4 overflow-hidden border-2 border-[#D47BFF]">
 					<div className="px-6 pt-6">
 						<h3 className="text-2xl font-semibold">Feedback Review</h3>
 						<p className="text-gray-300">
-							Our goal is to make your product user-friendly with top-notch functionality that meets industry standards.
+							Our goal is to make your product user-friendly with top-notch functionality <br /> that meets industry standards.
 						</p>
 					</div>
 					<div className="grid grid-cols-[30%,1fr] w-full h-[200px]">
@@ -61,7 +65,7 @@ const Services = () => {
 				</div> 
 
 				{/* Decentragrants */}
-				<div className="rounded-xl shadow-md flex flex-col space-y-4 overflow-hidden border-2 border-purple-600">
+				<div className="rounded-lg shadow-md flex flex-col space-y-4 overflow-hidden border-2 border-[#D47BFF]">
 					<div className="px-6 pt-6">
 						<h3 className="text-2xl font-semibold">Decentragrants</h3>
 						<p className="text-gray-300">
@@ -75,7 +79,7 @@ const Services = () => {
 
 				<div className="grid grid-cols-1 md:col-span-2 gap-4 md:grid-cols-[40%,1fr]">
 					{/* Hackathon Judging */}
-					<div className="border-2 border-purple-600 rounded-xl shadow-md p-6 flex flex-col space-y-4">
+					<div className="border-2 border-[#D47BFF] rounded-lg shadow-md p-6 flex flex-col space-y-4">
 						<h3 className="text-2xl font-semibold">Hackathon Judging</h3>
 						<p className="text-purple-200">
 							The collective knowledge of our power users ensures that each project is assessed with a keen understanding
@@ -98,19 +102,19 @@ const Services = () => {
 					</div>
 
 					{/* Feedback Bonanza */}
-					<div className="border-2 border-purple-600 rounded-xl shadow-md p-6 pb-0 pr-0 flex flex-col space-y-4">
+					<div className="border-2 border-[#D47BFF] rounded-lg shadow-md p-6 pb-0 pr-0 flex flex-col space-y-4">
 						<h3 className="text-2xl font-semibold">Feedback Bonanza: Live Feedback Session</h3>
 						<p className="text-gray-300">
 							Get real-time, in-depth reviews tailored to your project. Our live feedback sessions deliver actionable
 							insights to help you refine and elevate your product.
 						</p>
-						<div className="relative w-full h-full grid grid-cols-[30%,1fr]">
+						<div className="relative w-full h-full grid md:grid-cols-[30%,1fr]">
 							<div className="relative hidden md:block">
 								<span className="bg-[#673882] p-2 px-3 rounded-full border border-purple-600 absolute top-2 text-sm">Bug fixing</span>
 								<span className="bg-[#673882] p-2 px-3 rounded-full border border-purple-600 absolute text-sm right-2 top-[35%]">Live testing</span>
 								<span className="bg-[#673882] p-2 px-3 rounded-full border border-purple-600 absolute bottom-8 left-2 text-sm">UI Improvements</span>
 							</div>
-							<div className="relative w-full h-full">
+							<div className=" w-full h-full">
 								<ReactPlayer url="https://www.youtube.com/watch?v=KaR7gu06tUE" width="100%" height="100%" />
 							</div>
 						</div>
