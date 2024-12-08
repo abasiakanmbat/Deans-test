@@ -41,7 +41,7 @@ const Services = () => {
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
 				{/* Feedback Review */}
-				<div className="rounded-lg shadow-md flex flex-col space-y-4 overflow-hidden border-2 border-purple-600">
+				<div className="rounded-xl shadow-md flex flex-col space-y-4 overflow-hidden border-2 border-purple-600">
 					<div className="px-6 pt-6">
 						<h3 className="text-2xl font-semibold">Feedback Review</h3>
 						<p className="text-gray-300">
@@ -53,14 +53,14 @@ const Services = () => {
 							<img src="/images/feedback1.svg" alt="feedback" />
 						</div>
 						<div>
-							<img src="/images/feedback2.svg" alt="feedback" />
+							<img src="/images/feedback2.svg" alt="feedback" className="w-full" />
 						</div>
 					</div>
 
-				</div>
+				</div> 
 
 				{/* Decentragrants */}
-				<div className="rounded-lg shadow-md flex flex-col space-y-4 overflow-hidden border-2 border-purple-600">
+				<div className="rounded-xl shadow-md flex flex-col space-y-4 overflow-hidden border-2 border-purple-600">
 					<div className="px-6 pt-6">
 						<h3 className="text-2xl font-semibold">Decentragrants</h3>
 						<p className="text-gray-300">
@@ -74,7 +74,7 @@ const Services = () => {
 
 				<div className="grid grid-cols-1 md:col-span-2 gap-4 md:grid-cols-[40%,1fr]">
 					{/* Hackathon Judging */}
-					<div className="border-2 border-purple-600 rounded-lg shadow-md p-6 flex flex-col space-y-4">
+					<div className="border-2 border-purple-600 rounded-xl shadow-md p-6 flex flex-col space-y-4">
 						<h3 className="text-2xl font-semibold">Hackathon Judging</h3>
 						<p className="text-purple-200">
 							The collective knowledge of our power users ensures that each project is assessed with a keen understanding
@@ -97,7 +97,7 @@ const Services = () => {
 					</div>
 
 					{/* Feedback Bonanza */}
-					<div className="border-2 border-purple-600 rounded-lg shadow-md p-6 pb-0 pr-0 flex flex-col space-y-4">
+					<div className="border-2 border-purple-600 rounded-xl shadow-md p-6 pb-0 pr-0 flex flex-col space-y-4">
 						<h3 className="text-2xl font-semibold">Feedback Bonanza: Live Feedback Session</h3>
 						<p className="text-gray-300">
 							Get real-time, in-depth reviews tailored to your project. Our live feedback sessions deliver actionable

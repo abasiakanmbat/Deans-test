@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import TestimonialCard from "../ui/TestimonialCard";
 import SectionHeader from "../ui/SectionHeader";
@@ -71,23 +70,7 @@ const Testimonials = () => {
 			{/* Scrolling Cards */}
 			<div className="overflow-hidden relative">
 				<motion.div
-					className="flex space-x-6 animate-scroll mb-4"
-					initial={{ x: "50%" }}
-					animate={{ x: "0%" }}
-					transition={{
-						repeat: Infinity,
-						duration: 20,
-						ease: "linear",
-						repeatDelay: 0,
-						repeatType: "loop",
-					}}
-				>
-					{topScrollingTestimonials.map((testimonial, index) => (
-						<TestimonialCard key={index} testimonial={testimonial} />
-					))}
-				</motion.div>
-				<motion.div
-					className="flex space-x-6 animate-scroll"
+					className="flex space-x-4 animate-scroll mb-4"
 					initial={{ x: "0%" }}
 					animate={{ x: "-50%" }}
 					transition={{
@@ -95,7 +78,23 @@ const Testimonials = () => {
 						duration: 20,
 						ease: "linear",
 						repeatDelay: 0,
-						repeatType: "loop",
+						repeatType: "reverse",
+					}}
+				>
+					{topScrollingTestimonials.map((testimonial, index) => (
+						<TestimonialCard key={index} testimonial={testimonial} />
+					))}
+				</motion.div>
+				<motion.div
+					className="flex space-x-4 animate-scroll"
+					initial={{ x: "-50%" }}
+					animate={{ x: "0%" }}
+					transition={{
+						repeat: Infinity,
+						duration: 20,
+						ease: "linear",
+						repeatDelay: 0,
+						repeatType: "reverse",
 					}}
 				>
 					{bottomScrollingTestimonials.map((testimonial, index) => (

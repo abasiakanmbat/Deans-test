@@ -17,7 +17,7 @@ function AboutUs() {
 		'/images/nft/Scientistjoe.png',
 	]
 	return (
-		<div className="w-screen flex flex-col justify-center items-center text-white relative" id="about-us">
+		<div className="w-screen flex flex-col justify-center items-center text-white relative max-w-[1440px]" id="about-us">
 
 			{/*Heading*/}
 			<SectionHeader title="About Us" />

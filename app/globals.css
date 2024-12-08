@@ -6,7 +6,7 @@
 
 /*slider*/
 
-@keyframes scroll {
+/* @keyframes scroll {
   0% {
     transform: translateX(10%);
   }
@@ -17,7 +17,7 @@
 
 .animate-scroll {
   animation: scroll 10s linear infinite;
-}
+} */
 
 /*Pricing*/
 @keyframes rotate-border {
@@ -41,7 +41,7 @@
 .card-animated-border {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 2em;
   background-clip: padding-box;
 }
 

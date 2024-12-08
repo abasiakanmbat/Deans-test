@@ -1,5 +1,6 @@
 "use client"
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
+import { motion } from "framer-motion";
 
 function Trusties() {
  
@@ -11,7 +12,17 @@ function Trusties() {
           We&apos;ve been trusted by <em>founders</em> from
         </h6>
         <div className="overflow-hidden relative w-full h-64 pt-4">
-      <div className="flex animate-scroll ">
+          <motion.div className="flex animate-scroll "
+            initial={{ x: "0%" }}
+            animate={{ x: "-50%" }}
+            transition={{
+              repeat: Infinity,
+              duration: 20,
+              ease: "linear",
+              repeatDelay: 0,
+              repeatType: "reverse",
+            }}
+          >
         <img
           src="image 209 (1).png"
           alt="Image 1"
@@ -220,7 +231,7 @@ function Trusties() {
           className="w-12 h-12 flex-shrink-0 object-cover mr-4"
         />
         
-      </div>
+          </motion.div>
     </div>
       </div>
     </div>
