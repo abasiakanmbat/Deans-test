@@ -13,8 +13,12 @@ function NavBar() {
   };
 
   return (
-    <header className="flex justify-between md:mx-20 md:mt-10 bg-[#814D9A1A] bg-opacity-10 px-8 py-4 items-center rounded-lg relative">
+
+      <div className="sticky top-0 z-50 bg-[#160A26] border border-[#160A26] pb-5">
+    <header className=" flex justify-between md:max-xl:mx-16 xl:w-[75%] mx-auto md:mt-10 bg-[#814D9A1A] bg-opacity-10 px-9 py-5 items-center relative rounded-lg ">
       {/* Logo */}
+
+
       <Link href="/">
         <div className="flex items-center gap-2">
           <Image src="logo.svg" alt="logo" width={36} height={36} />
@@ -23,7 +27,7 @@ function NavBar() {
       </Link>
 
       {/* Hamburger Menu Button */}
-      <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+      <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
         <button
           type="button"
           className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -41,7 +45,7 @@ function NavBar() {
               strokeWidth="1.5"
               stroke="currentColor"
               aria-hidden="true"
-            >
+              >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -68,26 +72,26 @@ function NavBar() {
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:block">
-        <ul className="flex gap-8 font-semibold">
-          <li>
-            <Link href="#">Home</Link>
+      <nav className="hidden lg:block">
+        <ul className="flex space-x-10 font-semibold">
+          <li >
+            <Link className="hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7] " href="#">Home</Link>
           </li>
-          <li>
-            <Link href="#services">Services</Link>
+          <li >
+            <Link className="hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7] " href="#services">Services</Link>
           </li>
-          <li>
-            <Link href="#about-us">About Us</Link>
+          <li className="hover:text-[#D896F7]">
+            <Link className="hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7] " href="#about-us">About Us</Link>
+          </li >
+          <li className="hover:text-[#D896F7]">
+            <Link className="hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7] " href="#events">Events</Link>
           </li>
-          <li>
-            <Link href="#events">Events</Link>
-          </li>
-          <li>
-            <Link
+          <li className="hover:text-[#D896F7]">
+            <Link 
               href="https://leaderboard.deanslist.services/"
               target="blank"
               className="flex items-center gap-1"
-            >
+              >
               Leaderboard
             </Link>
           </li>
@@ -95,13 +99,14 @@ function NavBar() {
       </nav>
 
       {/* Button (Desktop Only) */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <a
           href="https://discord.gg/deanslist"
           target="blank"
           rel="noopener noreferrer"
-        >
-          <button className="bg-[#9A59BA80] py-2 px-6 rounded-full border border-[#9A59BA] font-medium hover:bg-purple-400 transition flex gap-2 items-center">
+          >
+          <button className="bg-[#9A59BA80] overflow-hidden py-2 px-6 relative rounded-full border border-[#9A59BA] font-medium hover:bg-purple-400 transition flex gap-2 items-center">
+					<button className="left-[1px] absolute border-b-[2px] border-b-[#ffffff] h-[40px] blur-[2px] px-16 rounded-[20px] -z-10"></button>
             Get Started
           </button>
         </a>
@@ -110,36 +115,36 @@ function NavBar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div
-          className="absolute top-full right-0 mt-2 w-48 bg-[#70328F] text-white rounded-lg shadow-lg z-10 sm:hidden"
-          id="mobile-menu"
+        className="absolute top-full right-0 mt-2 w-48 bg-[#70328F] text-white rounded-lg shadow-lg z-10 sm:hidden"
+        id="mobile-menu"
         >
           <div className="space-y-2 px-4 py-3">
             <Link
               href="#"
               className="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-200"
               onClick={toggleMenu}
-            >
+              >
               Home
             </Link>
             <Link
               href="#services"
               className="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-200"
               onClick={toggleMenu}
-            >
+              >
               Services
             </Link>
             <Link
               href="#about-us"
               className="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-200"
               onClick={toggleMenu}
-            >
+              >
               About Us
             </Link>
             <Link
               href="#events"
               className="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-200"
               onClick={toggleMenu}
-            >
+              >
               Events
             </Link>
             <Link
@@ -154,6 +159,7 @@ function NavBar() {
         </div>
       )}
     </header>
+      </div>
   );
 }
 

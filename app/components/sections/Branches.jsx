@@ -3,21 +3,26 @@ import SectionHeader from "../ui/SectionHeader";
 
 function Branches() {
 	return (
-		<div className="w-screen flex flex-col md:flex-row pt-40 mb-12">
+		<div className="w-screen justify-center md:space-x-[20%] flex flex-col lg:flex-row pt-40 mb-12  ">
 			{/*Left Content*/}
 
-			<div className="md:w-[500px] flex flex-col relative" >
-				<SectionHeader title="Branches" />
-				<div className="md:p-14 p-4">
-					<h4 className="text-white text-2xl font-bold mb-4 mt-12">Our Regional <span className="font-light font-editorial-new">States</span></h4>
-					<h5>Countries in which you can find us IRL and visit our branches.</h5>
+			<div className=" flex flex-col relative  " >
+				<div className="md:p-y14 p-4">
+				{/* <SectionHeader title="Branches" /> */}
+
+				<div className="relative ">
+					
+					<div className="absolute -left-[11rem] top-[10px] h-2 w-[10rem] bg-[#49255C]"></div>
+					Branches</div>
+					<h4 className="text-white text-2xl font-bold mb-4 mt-">Our Regional <span className="font-light font-editorial-new">States</span></h4>
+					<h5>Countries in which you can find us IRL and visit our <br /> branches.</h5>
 				</div>
 			</div>
 
 			{/*Branch card*/}
-			<div div className="flex flex-col gap-8 md:p-14 p-4" >  
+			<div div className="flex  flex-col gap-8 md:py-14 p-4  " >  
 				{/*Card1*/}
-				<div className="flex flex-col min-w-[280px] md:w-[685px] md:h-36 border-2 [border-image:linear-gradient(to_right,white,green)_50] rounded-lg pl-3 pt-1 pr-3 p-6 relative ">
+				<div className="flex flex-col min-w-[280px] md:w-[685px] md:h-36 border-2 rounded-lg[border-image:linear-gradient(to_right,white,green)_50] rounded-lg pl-3 pt-1 pr-3 p-6 relative ">
 					<img src="dlngimage.png" alt="Image Description" className="absolute right-0 top-0 h-full w-1/2 object-cover" />
 					<div className="relative z-10 mt-5">
 						<div className="flex items-center">
@@ -32,11 +37,11 @@ function Branches() {
 					
 					</div>
 					
-					<div className="w-full h-full bg-gradient-to-r from-green-500 from-50% to-75% to-transparent top-0 left-0 absolute">
+					<div className="w-full h-full bg-gradient-to-r from-green-500 from-50% to-75% to-transparent top-0 left-0 absolute ">
 					</div>
 				</div>
 				{/*Card2*/}
-				<div className="relative flex flex-col min-w-[280px] md:w-[685px] md:h-36 border-2 pl-3 pt-1 pr-3 p-6 rounded-lg [border-image:linear-gradient(to_right,#4d9f0c,#f6b73c)_50]" >
+				<div className="rounded-lg relative flex flex-col min-w-[280px] md:w-[685px] md:h-36 border-2 pl-3 pt-1 pr-3 p-6 [border-image:linear-gradient(to_right,#4d9f0c,#f6b73c)_50]" >
 					<img src="dlbrimage.png" alt="Image Description" className="absolute right-0 top-0 h-full w-1/2 object-cover" />
 					<div className="relative z-10 mt-5">
 						<div className="flex items-center">
